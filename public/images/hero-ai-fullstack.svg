@@ -1,0 +1,60 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="140" y1="80" x2="1060" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#38BDF8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="240" y1="220" x2="980" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0.20"/>
+    </linearGradient>
+    <filter id="blur" x="-80" y="-80" width="1360" height="1060" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <!-- Soft gradient blob -->
+  <g filter="url(#blur)">
+    <path d="M250 610C210 470 260 330 400 250C540 170 780 190 930 300C1080 410 1120 580 1030 700C940 820 720 880 530 830C340 780 290 750 250 610Z" fill="url(#g1)"/>
+  </g>
+
+  <!-- Grid frame -->
+  <rect x="210" y="190" width="780" height="520" rx="28" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M210 320H990" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M210 450H990" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M210 580H990" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M360 190V710" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M510 190V710" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M660 190V710" stroke="url(#g2)" stroke-width="2"/>
+  <path d="M810 190V710" stroke="url(#g2)" stroke-width="2"/>
+
+  <!-- Nodes and connections -->
+  <path d="M330 610C460 520 560 530 680 450C780 380 860 340 940 310" stroke="#22C55E" stroke-opacity="0.55" stroke-width="3"/>
+  <path d="M290 380C430 350 520 290 640 320C790 360 860 430 930 510" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="3"/>
+  <circle cx="330" cy="610" r="10" fill="#22C55E"/>
+  <circle cx="680" cy="450" r="10" fill="#22C55E"/>
+  <circle cx="940" cy="310" r="10" fill="#22C55E"/>
+  <circle cx="290" cy="380" r="10" fill="#38BDF8"/>
+  <circle cx="640" cy="320" r="10" fill="#38BDF8"/>
+  <circle cx="930" cy="510" r="10" fill="#38BDF8"/>
+
+  <!-- Small cards -->
+  <g opacity="0.95">
+    <rect x="260" y="235" width="250" height="70" rx="14" fill="#0B1220"/>
+    <rect x="280" y="256" width="150" height="10" rx="5" fill="#A78BFA" fill-opacity="0.9"/>
+    <rect x="280" y="276" width="110" height="10" rx="5" fill="#38BDF8" fill-opacity="0.8"/>
+
+    <rect x="540" y="235" width="400" height="70" rx="14" fill="#0B1220"/>
+    <rect x="560" y="256" width="240" height="10" rx="5" fill="#22C55E" fill-opacity="0.9"/>
+    <rect x="560" y="276" width="180" height="10" rx="5" fill="#38BDF8" fill-opacity="0.75"/>
+  </g>
+
+  <!-- Caption -->
+  <g opacity="0.9">
+    <rect x="260" y="735" width="680" height="56" rx="16" fill="#0B1220"/>
+    <rect x="282" y="755" width="210" height="10" rx="5" fill="#38BDF8" fill-opacity="0.85"/>
+    <rect x="504" y="755" width="180" height="10" rx="5" fill="#22C55E" fill-opacity="0.8"/>
+    <rect x="696" y="755" width="170" height="10" rx="5" fill="#A78BFA" fill-opacity="0.75"/>
+  </g>
+</svg>

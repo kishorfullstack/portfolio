@@ -1,0 +1,19 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pg" x1="140" y1="120" x2="760" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E" stop-opacity="0.7"/>
+      <stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="b" x="-40" y="-40" width="980" height="980" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="900" height="900" rx="64" fill="#0B1220"/>
+  <g filter="url(#b)" opacity="0.95">
+    <path d="M160 700C120 560 190 420 330 350C470 280 650 300 750 390C850 480 860 620 790 720C720 820 560 860 420 830C280 800 200 840 160 700Z" fill="url(#pg)"/>
+  </g>
+  <circle cx="450" cy="365" r="130" fill="#111B33" stroke="url(#pg)" stroke-width="6"/>
+  <path d="M220 760C260 630 345 565 450 565C555 565 640 630 680 760" fill="#111B33" stroke="url(#pg)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M385 360C410 322 440 304 478 305C520 306 547 328 565 365" stroke="url(#pg)" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+</svg>

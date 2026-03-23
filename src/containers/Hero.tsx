@@ -8,8 +8,13 @@ import { Button, Wrapper } from '@/components';
 
 import { slideUp } from '@/styles/animations';
 
-import { Player } from '@lottiefiles/react-lottie-player';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+
+const Player = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then((mod) => mod.Player),
+  { ssr: false }
+);
 
 const Hero = () => {
   const { cta, subtitle, title, tagline, description, specialText } =

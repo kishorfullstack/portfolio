@@ -1,12 +1,17 @@
 'use client';
-import { Player } from '@lottiefiles/react-lottie-player';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
 type Props = {
   path: any;
   className?: string;
 };
+
+const Player = dynamic(
+  () => import('@lottiefiles/react-lottie-player').then((mod) => mod.Player),
+  { ssr: false }
+);
 
 const isStaticImage = (path: any): path is string =>
   typeof path === 'string' &&

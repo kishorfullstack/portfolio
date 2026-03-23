@@ -24,9 +24,8 @@ export const seoData = {
   description:
     'Kishor Kumar is a Full‑Stack Technical Lead building scalable web products and AI‑powered experiences (Next.js, Node/NestJS, Python, RAG, automation).',
   author: author.name,
-  image:
-    'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://kishorfullstack.vercel.app',
+  image: 'https://kumarkishor.com/images/photo-professional.jpg',
+  url: 'https://kumarkishor.com/',
   keywords: [
     'kishor',
     'Kishor',
@@ -34,10 +33,12 @@ export const seoData = {
     'kishor kumar',
     'kumar',
     'Kumar',
+    'kumarkishor',
+    'kumarkishor.com',
     '@kishorfullstack',
     'kishorfullstack',
     'Portfolio',
-    'Kishor Portfolio ',
+    'Kishor Portfolio',
     'Kishor Kumar Portfolio',
     'Full Stack Developer',
     'AI Developer',

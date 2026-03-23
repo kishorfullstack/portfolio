@@ -25,15 +25,24 @@ export const metadata: Metadata = {
     url: seoData.url,
     title: seoData.title,
     description: seoData.description,
-    images: seoData.image,
+    images: [
+      {
+        url: seoData.image,
+        width: 1200,
+        height: 630,
+        alt: `${seoData.author} – Full-Stack Developer (AI/ML)`,
+      },
+    ],
     siteName: seoData.title,
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: seoData.title,
     description: seoData.description,
-    images: seoData.image,
-    site: seoData.url,
+    images: [seoData.image],
+    site: '@kishorfullstack',
+    creator: '@kishorfullstack',
   },
   icons: [
     {
